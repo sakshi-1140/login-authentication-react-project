@@ -17,17 +17,17 @@ const Profile = ({ onLogout }) => {
           if (response.ok) {
             const userData = await response.json();
             setUser(userData);
-            console.log("response ok for profile page");
+          //  console.log("response ok for profile page");
           } else {
             console.log("response not ok for profile page");
             setError("Failed to fetch user data.");
           }
         } catch (error) {
-          console.log("error in profile page");
+         // console.log("error in profile page");
           setError("An unexpected error occurred.");
         }
       } else {
-        console.log("problem in local storage");
+       // console.log("problem in local storage");
         setError("No user data found. Please log in.");
       }
     };

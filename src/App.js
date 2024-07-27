@@ -12,7 +12,7 @@ function App() {
     if (storedUser) {
       setIsAuthenticated(true);
       setUser(storedUser);
-      console.log(`previous user without login ${user}`)
+      //console.log(`previous user without login ${user}`)
     }
   }, []);
   

@@ -8,7 +8,7 @@ function Login({ onLogin, error }) {
     e.preventDefault();
     const username = userNameRef.current.value;
     const password = passwordRef.current.value;
-    console.log(`login clicked + usename : ${username} password :${password}`);
+    //console.log(`login clicked + usename : ${username} password :${password}`);
     onLogin(username, password);
   };
 
