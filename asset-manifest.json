@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/login-authentication-react-project/static/css/main.b5f0e180.css",
+    "main.js": "/login-authentication-react-project/static/js/main.fe2cd9dd.js",
+    "index.html": "/login-authentication-react-project/index.html",
+    "main.b5f0e180.css.map": "/login-authentication-react-project/static/css/main.b5f0e180.css.map",
+    "main.fe2cd9dd.js.map": "/login-authentication-react-project/static/js/main.fe2cd9dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5f0e180.css",
+    "static/js/main.fe2cd9dd.js"
+  ]
+}
