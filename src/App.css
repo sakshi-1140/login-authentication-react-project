@@ -45,3 +45,11 @@ a{
 span{
   color: #0056b3;
 }
+.profile-container{
+  width: 40vw;
+  height: 60vh;
+  background-color: rgb(231, 238, 238);
+  margin: auto;
+  padding: 20px;
+  border-radius: 1rem;
+}

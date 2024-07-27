@@ -8,11 +8,11 @@ function App() {
   const [error, setError] = useState('');
   
   useEffect(() => {
-    // if u don't log out and just reload page.
     const storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser) {
       setIsAuthenticated(true);
       setUser(storedUser);
+      console.log(`previous user without login ${user}`)
     }
   }, []);
   
@@ -27,25 +27,25 @@ function App() {
       const data = await response.json();
 
       if (response.ok) {
-        console.log("response ok")
-        console.log(data);
+      //  console.log("response ok")
+      //  console.log(data);
         localStorage.setItem('user', JSON.stringify(data));
         setIsAuthenticated(true);
         setUser(data);
+      //  console.log(user);
         setError('');
       } else {
-        console.log("response not ok")
+        //console.log("response not ok")
         setError(data.message);
       }
     } catch (err) {
-      console.log("error while handle login")
+     // console.log("error while handle login")
       setError('Something went wrong. Please try again.');
     }
   };
   const handleLogout = () => {
-    console.log("log-out click")
+ // console.log("log-out click")
     localStorage.removeItem('user');
-   // localStorage.removeItem('userDetails');
     setIsAuthenticated(false);
     setUser(null);
   };
