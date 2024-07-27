@@ -19,7 +19,7 @@ const Profile = ({ onLogout }) => {
             setUser(userData);
           //  console.log("response ok for profile page");
           } else {
-            console.log("response not ok for profile page");
+           // console.log("response not ok for profile page");
             setError("Failed to fetch user data.");
           }
         } catch (error) {
