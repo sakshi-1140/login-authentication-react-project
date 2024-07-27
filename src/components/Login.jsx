@@ -4,7 +4,7 @@ function Login({ onLogin, error }) {
   const userNameRef = useRef();
   const passwordRef = useRef();
 
-  const handleLogin = async (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
     const username = userNameRef.current.value;
     const password = passwordRef.current.value;
